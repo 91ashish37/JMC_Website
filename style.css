@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* VIDEO */
+
+.hero video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* DARK OVERLAY */
+
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 1;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: transparent;
+
+    border-bottom: 1px solid rgba(255,255,255,1);
+
+    z-index: 3;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+/* TEXT */
+
+.content {
+    position: absolute;
+
+    top: 50%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 70px;
+}
+
+.content p {
+    font-size: 22px;
+
+    margin: 20px 0;
+}
+
+.content button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    background: red;
+    color: white;
+    font-size: 16px;
+}
+.btn1{
+    border-radius: 30px;
+    padding: 5px 9px;
+    background: transparent;
+    color: white;
+}
+.btn2{
+    min-width: 20vw;
+    min-height: 60px;
+
+    border-radius: 30px;
+    padding: 2px 5px;
+    background: red;
+    color: white;
+    font-size: 16px;
+}
+.margin-btn{
+    margin-top: 90px;
+}
+
+.box1{
+    min-width: 150px;
+    min-height: 150px;
+    background: #ffff;
+}
+
+.main-box{
+    min-width: 400px;
+    min-height: 150px;
+    background: #ffff;
+    text-align: center;
+     position: relative;
+    top: -50px;
+    color: black;
+    border-radius: 20px;
+}
+.clr{
+    color:3px solid black;
+}
+
+.middle-section{
+    min-height:600px;
+
+
+}
+
+.img-left{
+    background-image: url('images/car1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:70% 100%;
+    
+
+}
+.img-right{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:70% 100%;
+
+}
+
+.img-h{
+    min-height:600px;
+    width:300px;
+
+}
+.main-section {
+            padding: 60px 0;
+        }
+
+        /* LEFT IMAGE */
+        .image-box {
+            height: 765px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            background: #000;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-box::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                transparent 45%,
+                rgba(0, 0, 0, 0.85) 100%
+            );
+        }
+
+        .image-content {
+            position: absolute;
+            z-index: 2;
+            bottom: 35px;
+            left: 40px;
+            right: 30px;
+            color: white;
+        }
+
+        .small-heading {
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .image-content h1 {
+            font-size: 48px;
+            line-height: 1.05;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .info-box {
+            height: 765px;
+            background: #111111;
+            border-radius: 30px;
+            color: white;
+            padding: 85px 80px;
+        }
+
+        .info-title {
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: #aeb8c5;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .info-box p {
+            color: #b7bec8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .feature-card {
+            height: 135px;
+            border: 1px solid #383838;
+            border-radius: 18px;
+            padding: 25px 20px;
+            background: #111111;
+        }
+
+        .feature-card h5 {
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            color: #9da5b0;
+        }
+
+        @media (max-width: 991px) {
+
+            .main-section {
+                padding: 30px 15px;
+            }
+
+            .image-box {
+                height: 550px;
+                margin-bottom: 25px;
+            }
+
+            .info-box {
+                height: auto;
+                padding: 45px 30px;
+            }
+
+            .image-content {
+                left: 25px;
+                bottom: 25px;
+            }
+
+            .image-content h1 {
+                font-size: 36px;
+            }
+
+            .info-box p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .image-box {
+                height: 500px;
+                border-radius: 20px;
+            }
+
+            .info-box {
+                border-radius: 20px;
+                padding: 35px 20px;
+            }
+
+            .image-content h1 {
+                font-size: 30px;
+            }
+
+            .feature-card {
+                height: auto;
+                min-height: 125px;
+            }
+        }
+.botton-section{
+    min-height: 600px;
+}
+
+.box2{
+    min-height: 300px;
+    min-width: 400px;
+    border-radius: 20px;
+}
+.l{
+    min-height: 100px;
+}
+.botton1-section{
+    min-height: 400px;
+}
+.img1{
+    background-image: url(images/car1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.r{
+    border-radius: 20px;
+}
+.img2{
+    background-image: url(images/car2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.botton2-section{
+    min-height: 700px;
+}
